@@ -1,3 +1,4 @@
+from __future__ import annotations
 import numpy as np
 import pandas as pd
 from PIL import Image
@@ -5,8 +6,6 @@ from typing import Union
 
 np.set_printoptions(threshold=np.inf, linewidth=300)
 
-# Original code by Håkon Måløy
-# Extended and documented by Xavier Sánchez-Díaz
 
 
 class Map_Obj():
