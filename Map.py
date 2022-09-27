@@ -228,6 +228,10 @@ class Map_Obj():
             str_value = ' : '
         elif value == 4:
             str_value = ' ; '
+        elif value == 5: 
+            str_value = ' S '
+        elif value == 6: 
+            str_value = ' T '
         else:
             str_value = str(value)
         self.int_map[pos[0]][pos[1]] = value
@@ -338,7 +342,9 @@ class Map_Obj():
             ' : ': (96, 96, 96),   # darkgrey
             ' ; ': (36, 36, 36),   # blackish
             ' S ': (255, 0, 255),  # magenta
-            ' G ': (0, 128, 255)   # cyan
+            ' G ': (0, 128, 255),   # cyan
+            ' T ': (212, 0, 255),    # hot pinkish
+            ' S ': (245, 241, 12)    # yellowish
         }
         # Go through image and set pixel color for every position
         for y in range(height):
